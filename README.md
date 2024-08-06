@@ -91,6 +91,17 @@ The project follows the Clean Architecture principles, organized into the follow
 - **[http](https://pub.dev/packages/http)**: A composable, future-based library for making HTTP requests.
 - **[get_it](https://pub.dev/packages/get_it)**: Simple and flexible dependency injection.
 
+Below are some screenshots of the app:
+
+### Home Screen
+![Home Screen](path/to/home_screen.png)
+
+### News Details Screen
+![Search Screen](path/to/news_details_screen.png)
+
+### Settings Screen
+![Favorite Screen](path/to/settings_screen.png)
+
 ## Resources
 
 - [Flutter Documentation](https://docs.flutter.dev/)
