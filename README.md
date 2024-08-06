@@ -94,13 +94,13 @@ The project follows the Clean Architecture principles, organized into the follow
 Below are some screenshots of the app:
 
 ### Home Screen
-![Home Screen](.screenshots/photo_5301161607151347119_y.jpg)
+![Home Screen](screenshots/photo_5301161607151347119_y.jpg)
 
 ### News Details Screen
-![Search Screen](.screenshots/photo_5301161607151347120_y.jpg)
+![Search Screen](screenshots/photo_5301161607151347120_y.jpg)
 
 ### Settings Screen
-![Favorite Screen](.screenshots/photo_5301161607151347121_y.jpg)
+![Favorite Screen](screenshots/photo_5301161607151347121_y.jpg)
 
 ## Resources
 
