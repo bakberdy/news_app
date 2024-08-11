@@ -2,11 +2,10 @@ Sure, I'll update the README to include the usage of these packages.
 
 # News App
 
-A Flutter News App built using Test-Driven Development (TDD) and following the Clean Architecture principles. The app utilizes the `bloc` state management library, `http` for networking, `get_it` for dependency injection, and several other packages for enhanced functionality.
+A Flutter News App built following the Clean Architecture principles. The app utilizes the `bloc` state management library, `http` for networking, `get_it` for dependency injection, and several other packages for enhanced functionality.
 
 ## Features
 
-- **Test-Driven Development (TDD)**: Ensuring robust and maintainable code through comprehensive testing.
 - **Clean Architecture**: Structured to separate concerns and promote scalability.
 - **State Management**: Managed by `bloc` for predictable state handling.
 - **Networking**: Uses `http` package to fetch news from APIs.
