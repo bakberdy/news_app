@@ -15,7 +15,6 @@ class NewsEntity extends Equatable {
       required this.sectionName});
 
   @override
-  // TODO: implement props
   List<Object?> get props => [title, body, pubDate, sectionName];
 
   NewsEntity copyWith(

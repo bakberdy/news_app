@@ -6,13 +6,18 @@ import 'article_widget.dart';
 
 class ArticleListBar extends StatelessWidget {
   const ArticleListBar(
-      {super.key, required this.titleOfList, required this.news, required this.isInHomeScreen, required this.onRefresh, required this.barHeight});
+      {super.key,
+      required this.titleOfList,
+      required this.news,
+      required this.isInHomeScreen,
+      required this.onRefresh,
+      required this.barHeight});
 
   final String titleOfList;
   final List<NewsEntity> news;
   final bool isInHomeScreen;
   final double barHeight;
-   final Future<void> Function() onRefresh;
+  final Future<void> Function() onRefresh;
 
   @override
   Widget build(BuildContext context) {
@@ -36,7 +41,6 @@ class ArticleListBar extends StatelessWidget {
           child: RefreshIndicator(
             onRefresh: onRefresh,
             child: ListView.builder(
-
                 physics: const AlwaysScrollableScrollPhysics(),
                 shrinkWrap: true,
                 itemCount: news.length,

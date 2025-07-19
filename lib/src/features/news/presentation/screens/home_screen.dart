@@ -87,7 +87,7 @@ class HomeScreen extends StatelessWidget {
         titleOfList: 'Daily News',
         news: state.lastNews,
         isInHomeScreen: true,
-        barHeight: MediaQuery.of(context).size.height * 0.64,
+        barHeight: MediaQuery.of(context).size.height * 0.58,
         onRefresh: () async {
           BlocProvider.of<HomeBloc>(context).add(GetLastNewsEvent());
         },

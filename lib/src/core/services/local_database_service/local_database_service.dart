@@ -70,7 +70,7 @@ class LocalDatabaseService {
     final db = await database;
     final List<dynamic> data = await db.query(FAVORITE_NEWS_TABLE_NAME);
     final List<NewsModel> news =
-        data.map((e) => NewsModel.fromJson(e)).toList();
+        data.map((e) => NewsModel.fromLocalJson(e)).toList();
     return news;
   }
 

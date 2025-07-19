@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-        designSize: const Size(360, 690), // Set the design size of your app
+        designSize: const Size(360, 690),
         minTextAdapt: true,
         splitScreenMode: true,
         builder: (context, child) {
@@ -34,9 +34,8 @@ class MyApp extends StatelessWidget {
                   create: (_) => di.sl<HomeBloc>()..add(GetLastNewsEvent())),
               BlocProvider(create: (_) => di.sl<FavoriteBloc>()),
               BlocProvider(create: (_) => BottomNavBarCubit()),
-              BlocProvider(create:(_)=> di.sl<SearchBloc>())
+              BlocProvider(create: (_) => di.sl<SearchBloc>())
             ], child: MainWrapper()),
-            // home: const MyHomePage(title: 'Flutter Demo Home Page'),
           );
         });
   }

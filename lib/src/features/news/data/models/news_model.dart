@@ -11,11 +11,18 @@ class NewsModel extends NewsEntity {
   factory NewsModel.fromJson(Map<String, dynamic> map) {
     return NewsModel(
         title: map['abstract'].toString().replaceAll('\'\'', 'â'),
-        body: map['lead_paragraph'],
+        body: map['headline']['main'] as String,
         pubDate: DateTime.parse(map['pub_date']),
         sectionName: map['section_name'] as String,
-      id: map['id']
-    );
+        id: map['id']);
+  }
+  factory NewsModel.fromLocalJson(Map<String, dynamic> map) {
+    return NewsModel(
+        title: map['abstract'].toString().replaceAll('\'\'', 'â'),
+        body: map['lead_paragraph'] as String,
+        pubDate: DateTime.parse(map['pub_date']),
+        sectionName: map['section_name'] as String,
+        id: map['id']);
   }
 
   Map<String, dynamic> toJson() {
